@@ -26,7 +26,7 @@ class CalculateDataJob implements ShouldQueue
      */
     public function handle(): void
     {
-        for ($x = 1; $x <= 10; $x++) {
+        for ($x = 1; $x <= 5; $x++) {
             sleep(2);
             // do calculation
         }
