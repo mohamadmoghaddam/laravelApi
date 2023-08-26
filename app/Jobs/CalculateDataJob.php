@@ -13,14 +13,12 @@ class CalculateDataJob implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    /**
-     * Create a new job instance.
-     */
-    public function __construct()
-    {
-        //
-    }
+    public $x;
 
+    public function __construct($x)
+    {
+        $this->x = $x;
+    }
     /**
      * Execute the job.
      */

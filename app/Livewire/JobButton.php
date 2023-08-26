@@ -14,8 +14,8 @@ class JobButton extends Component
 
     public function runJob()
     {
-        //for ($x = 1; $x <= 10; $x++) {
-            CalculateDataJob::dispatch();
-       // }
+        for ($x = 1; $x <= 10; $x++) {
+            CalculateDataJob::dispatch($x);
+       }
     }
 }
